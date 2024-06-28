@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+body{
+    /* background: linear-gradient(to bottom, white, green, black); */
+    background-color: black;
+    color: white;
+}
+
+.navbar{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link{
+    color: white !important;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7); /* Preto com opacidade */
+  }
+
+  /* .seja_colaborador{
+    background-color: red;
+    text-align: center;
+    display: inline-block;
+  } */
+
+.navbar-nav .nav-item .nav-link {
+  padding: 8px 20px; /* Ajuste a margem esquerda conforme necessário */
+}
+
+.navbar-nav .nav-item .nav-link {
+  margin: 0 10px;
+}
+
+.navbar-scroll {
+  background-color: rgba(0, 0, 0, 0.8); /* Preto com opacidade */
+  transition: background-color 0.4s;
+}
+
+.navbar-scroll .nav-link {
+  background-color: transparent;
+}
+
+/* ---------------------- INICIO DA ESTILIZACAO DO MENU HAMBURGUER ------------------- */
+.navbar-toggler{
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus{
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span{
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  /* background: #d3531a; */
+  background: white;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar{
+  margin-top: 0px;
+}
+
+/* quando o navigation é clicado */
+.navbar-toggler .top-bar{
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* quando o navbar é collapsado */
+.navbar-toggler.collapsed .top-bar{
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+  opacity: 1;
+  filter: alpha(opacity=100)
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+/* Cor das 3 linhas */
+
+.navbar-toggler.collapsed .toggler-icon{
+  /* background: linear-gradient(263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100%); */
+}
+
+/* ---------------------- FIM DA ESTILIZACAO DO MENU HAMBURGUER ------------------- */
+
+.logo_principal{
+    width: 60px;
+    border-radius: 100%;
+}
+  .item1, .item2, .item3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 70vh; */
+  }
+ 
+  /* .item1{
+    background-image: url('../images/carousel.png');
+  }
+
+  .item2{
+    background-image: url('../images/carousel1.png');
+  }
+
+  .item3{
+    background-image: url('../images/carousel2.png');
+  } */
+
+  .sessao2{
+    padding: 5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    background: linear-gradient(to bottom, white, blue, black);
+    border: none;
+    margin: 10px;
+  }
+
+  .custom_card{
+    flex: 0 0 calc(20% - 1rem); /* 20% largura menos margem */
+    margin: 0.5rem;
+  }
+
+  .sessao3{
+    padding: 5rem 0 0 0;  
+  }
+
+  .sessao3__confrontos{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+  }
+
+  .sessao4{
+    padding: 5rem 0 0 0;
+  }
+
+  .sessao4__patrocinadores{
+    padding: 30px;
+    text-align: center;
+  }
+
+  .sessao4__patrocinadores img{
+    border-radius: 100%;
+    margin: 10px;
+    width: 120px;
+  }
+
+  .patrocinio_desktop{
+    display: none;
+  }
+
+  .carousel2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .custom-carousel{
+    width: 200px;
+    border-radius: 100%;
+  }
+
+  .custom-carousel img{
+    border-radius: 100%;
+    width: 50%;
+  }
+
+  .sessao5{
+    padding: 5rem 0 0 0;
+  }
+
+  .sessao5_melhores__momentos{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .sessao6_colaborador_imagem{
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .sessao6_colaborador_imagem img{
+    width: 100%;
+  }
+
+  footer{
+    padding: 30px;
+  }
+
+  .redes_sociais a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .redes_sociais p{
+    margin-top: 10px;
+  }
+
+  .bi-instagram{
+    font-size: 25px;
+    margin-left: 10px;
+    color: white;
+  }
+
+  .copy a{
+    color: white !important;
+    text-decoration: none;
+  }
+
+  .fa-laptop{
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 767px){
+    .navbar-nav .nav-item .nav-link {
+      margin-bottom: 4px;
+    }
+    .navbar-nav{
+      margin-top: 10px;
+    }
+
+    .item1 img, .item2 img, .item3 img{
+      height: 25vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .custom_card{
+      margin: 0.5rem;
+      width: 70vw;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    .carousel2{
+      display: none;
+    }
+
+    .patrocinio_desktop{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
