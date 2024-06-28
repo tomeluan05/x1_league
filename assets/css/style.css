@@ -26,12 +26,6 @@ body{
     background-color: rgba(0, 0, 0, 0.7); /* Preto com opacidade */
   }
 
-  /* .seja_colaborador{
-    background-color: red;
-    text-align: center;
-    display: inline-block;
-  } */
-
 .navbar-nav .nav-item .nav-link {
   padding: 8px 20px; /* Ajuste a margem esquerda conforme necessário */
 }
@@ -47,6 +41,19 @@ body{
 
 .navbar-scroll .nav-link {
   background-color: transparent;
+}
+
+.seja_colaborador_botao_menu{
+  background-color: #f14205 !important;
+}
+
+.seja_colaborador a{  
+  background-color: #f14205;
+  text-decoration: none;
+  color: #FFF;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 1px solid #FFF;
 }
 
 /* ---------------------- INICIO DA ESTILIZACAO DO MENU HAMBURGUER ------------------- */
@@ -120,9 +127,9 @@ body{
 
 /* Cor das 3 linhas */
 
-.navbar-toggler.collapsed .toggler-icon{
-  /* background: linear-gradient(263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100%); */
-}
+/* .navbar-toggler.collapsed .toggler-icon{
+  background: linear-gradient(263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100%);
+} */
 
 /* ---------------------- FIM DA ESTILIZACAO DO MENU HAMBURGUER ------------------- */
 
@@ -225,6 +232,10 @@ body{
     text-align: center;
   }
   
+  .sessao6{
+    padding: 5rem 0 0 0;
+  }
+  
   .sessao6_colaborador_imagem{
     width: 450px;
     margin: 0 auto;
@@ -275,6 +286,11 @@ body{
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    .carousel-item-mobile img{
+      width: 140px;
+      margin: 0 auto;
     }
 
     .custom_card{
