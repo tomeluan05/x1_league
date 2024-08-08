@@ -110,7 +110,7 @@ body{
 
 .live_ao_vivo{
   position: fixed;
-  bottom: 5%;
+  bottom: 15%;
   right: 2%;
 }
 
@@ -296,7 +296,7 @@ body{
     margin: 10px;
     /* width: 200px; */
     border-radius: 20px;
-    border: 1px solid var(--color-green);
+    border: 1px solid var(--color-white);
     border-radius: 5px;
   }
 
@@ -321,7 +321,7 @@ body{
   .custom-carousel img{
     /* border-radius: 100%; */
     /* width: 100%; */
-    border: 1px solid var(--color-green);
+    border: 1px solid var(--color-white);
     border-radius: 5px;
   }
 
