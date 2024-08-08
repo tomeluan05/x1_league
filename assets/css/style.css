@@ -386,9 +386,10 @@ body{
 
     .live_ao_vivo a img{
       width: 65px;
+      margin: 0 auto 15px auto;
     }
 
-    .live_ao_vivo a span{
+    .live_ao_vivo a p{
       padding: 5px 10px;
       border-radius: 10px;
       font-size: 14px;
