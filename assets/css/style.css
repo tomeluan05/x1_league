@@ -10,6 +10,7 @@
   --color-green-hover: #16c416;
   --color-black: #000;
   --color-black-opacity: rgba(0, 0, 0, 0.8);
+  --color-footer: #1e1e1e;
 }
 
 html {
@@ -20,6 +21,7 @@ body{
     /* background: linear-gradient(to bottom, white, green, black); */
     background-color: var(--color-black);
     color: white;
+    position: relative;
 }
 
 .ultimo_patrocinio{
@@ -99,6 +101,40 @@ body{
   50% {
     transform: scale(1.2);
   }
+}
+
+.carousel{
+  position: relative;
+  z-index: -1;
+}
+
+.live_ao_vivo{
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+}
+
+.live_ao_vivo a img{
+  width: 100px;
+  border-radius: 100%;
+  border: 1px solid var(--color-green);
+  display: block;
+  margin: 0 auto 25px auto;
+  z-index: 10;
+}
+
+.live_ao_vivo a{
+  text-decoration: none;
+}
+
+.live_ao_vivo a p{
+  text-align: center;
+  border: 1px solid var(--color-white);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--color-black);
+  background-color: var(--color-green-hover);
+  font-weight: bold;
 }
 
 /* ---------------------- INICIO DA ESTILIZACAO DO MENU HAMBURGUER ------------------- */
@@ -317,7 +353,8 @@ body{
   }
 
   footer{
-    padding: 30px;
+    padding: 20px;
+    background-color: var(--color-footer);
   }
 
   .redes_sociais a{
@@ -346,6 +383,17 @@ body{
   }
 
   @media screen and (max-width: 767px){
+
+    .live_ao_vivo a img{
+      width: 65px;
+    }
+
+    .live_ao_vivo a span{
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
     .navbar-nav .nav-item .nav-link {
       margin-bottom: 4px;
     }
