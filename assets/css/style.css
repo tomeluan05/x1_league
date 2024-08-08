@@ -103,26 +103,26 @@ body{
   }
 }
 
-.carousel{
-  position: relative;
-  z-index: -1;
-}
-
-.live_ao_vivo{
+.live_ao_vivo {
   position: fixed;
-  bottom: 15%;
-  right: 2%;
+  bottom: 10%;
+  right: 5%;
+  z-index: 10;
+  pointer-events: none; 
 }
 
-.live_ao_vivo a img{
+.live_ao_vivo a img {
   width: 100px;
   border-radius: 100%;
   border: 1px solid var(--color-green);
   display: block;
   margin: 0 auto 25px auto;
-  z-index: 10;
 }
 
+.carousel {
+  position: relative;
+  z-index: 1;
+}
 .live_ao_vivo a{
   text-decoration: none;
 }
@@ -314,7 +314,7 @@ body{
   } */
 
   .custom-carousel{
-    width: 400px;
+    max-width: 400px;
     /* border-radius: 100%; */
   }
 
