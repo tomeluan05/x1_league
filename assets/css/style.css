@@ -24,6 +24,10 @@ body{
     position: relative;
 }
 
+#youtubeLive{
+  margin-top: 150px;
+}
+
 .ultimo_patrocinio{
   opacity: 0;
 }
@@ -354,7 +358,6 @@ body{
 
   footer{
     padding: 20px;
-    background-color: var(--color-footer);
   }
 
   .redes_sociais a{
