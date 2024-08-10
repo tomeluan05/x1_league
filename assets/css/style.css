@@ -464,6 +464,10 @@ body{
 
   @media screen and (max-width: 767px){
 
+    .sessao6_colaborador_texto h4{
+      font-size: 15px;
+    }
+
     .logo_principal{
       display: none;
     }
