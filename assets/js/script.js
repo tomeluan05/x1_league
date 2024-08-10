@@ -31,35 +31,35 @@ window.addEventListener('scroll', function() {
   }
   
   // Função para verificar se a transmissão ao vivo está disponível
-  // function checkLiveStream() {
-  //     fetch(`https://www.youtube.com/oembed?url=${liveStreamUrl}&format=json`)
-  //         .then(response => {
-  //             if (response.ok) {
-  //                 // A transmissão ao vivo está disponível
-  //                 setIframeSrc(liveStreamUrl);
-  //             } else {
+  function checkLiveStream() {
+      fetch(`https://www.youtube.com/oembed?url=${liveStreamUrl}&format=json`)
+          .then(response => {
+              if (response.ok) {
+                  // A transmissão ao vivo está disponível
+                  setIframeSrc(liveStreamUrl);
+              } else {
                   // A transmissão ao vivo não está disponível, exibe o fallback
-          //         console.log("A transmissão ao vivo não está disponível, exibindo o fallback.");
-          //         setIframeSrc(fallbackUrl + "?autoplay=1&loop=1");
-          //     }
-          // })
-          // .catch(() => {
+                  console.log("A transmissão ao vivo não está disponível, exibindo o fallback.");
+                  setIframeSrc(fallbackUrl + "?autoplay=1&loop=1");
+              }
+          })
+          .catch(() => {
               // Em caso de erro na verificação, exibe o fallback
-  //             console.log("Erro ao verificar a transmissão ao vivo, exibindo o fallback.");
-  //             setIframeSrc(fallbackUrl + "?autoplay=1&loop=1");
-  //         });
-  // }
+              console.log("Erro ao verificar a transmissão ao vivo, exibindo o fallback.");
+              setIframeSrc(fallbackUrl + "?autoplay=1&loop=1");
+          });
+  }
   
   // Verifica a transmissão ao vivo a cada intervalo
-  // setInterval(() => {
-  //     checkLiveStream();
-  // }, checkInterval);
+  setInterval(() => {
+      checkLiveStream();
+  }, checkInterval);
   
   // Inicializa com a URL do vídeo de fallback
-  // setIframeSrc(fallbackUrl + "?autoplay=1&loop=1");
+  setIframeSrc(fallbackUrl + "?autoplay=1&loop=1");
   
   // Inicia a verificação
-  // checkLiveStream();
+  checkLiveStream();
 
 //   Explicações
 // HTML: Inicializa o iframe com a URL do vídeo de fallback. Isso garante que o fallback será exibido até que a transmissão ao vivo esteja disponível.
